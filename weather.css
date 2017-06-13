@@ -1,0 +1,300 @@
+/*
+Let html, body, div, and by height
+equal to 100% so that the background
+will have a landing full-screen page
+that would stretch the screen depending
+on the screen size. This is equivalent
+to performing a 100vh(viewpoint height).
+The vh size doesn not seem to work on older versions of mobile devices.
+*/
+html{
+  height:100%;
+}
+body{
+  height:100%;
+  background:white;
+}
+div{
+  height:100%;
+}
+.by{
+
+  height: 100%;
+
+}
+/*
+This is for sizing the transparent
+box of the current weather location.
+*/
+.lc{
+  background:black;
+  opacity:0.65;
+  height:auto;
+  width:60%;
+  border-radius:3px;
+  margin-top: 40px;
+  padding-top: 0px;
+  padding-bottom:20px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: white;
+
+}
+/*
+This is for displaying the size of
+the current weather location heading.
+*/
+.wl{
+  background:black;
+  opacity:0.65;
+  height:auto;
+  width:auto;
+  border-radius:3px;
+  padding-top: 5px;
+  padding-bottom:5px;
+  padding-right:20px;
+  padding-left: 20px;
+  margin-left:50px;
+  margin-right:50px;
+  color: white;
+
+}
+/*
+This is for fixing the
+padding size of the country
+and city location.
+*/
+#ctry{
+  padding-top:20px;
+  padding-bottom: 15px;
+}
+/*
+This is for giving a transparent
+box behind the weather icon.
+*/
+.wbox{
+  background:black;
+  opacity:0.60;
+  height:auto;
+  width:auto;
+  border-radius:3px;
+  margin-top: 20px;
+  margin-bottom:20px;
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: white;
+
+}
+
+/*
+This is for sizing the transparent
+box for the current weather status.
+*/
+.status{
+  background:black;
+  opacity:0.65;
+  height:auto;
+  width:80%;
+  border-radius:3px;
+  padding-top: 20px;
+  padding-bottom:20px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: white;
+
+}
+/*
+This is for sizing the weather
+background with 100% height and 
+width with a flex display.
+*/
+#wth{
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: -webkit-flex;  
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom:0px;
+}
+
+/*
+This is for displaying the transparent
+box for changing temperatures.
+*/
+.bn{
+  color:white;
+  background:black;
+  border-color: black;
+  padding-left:5px;
+  padding-right:5px;
+  margin-bottom: 30px;
+  opacity:0.65;
+
+    &:hover{
+    background: white;
+  } 
+}
+
+/*
+This is for displaying the size
+of the transparent box for 
+updating the weather.
+*/
+.update{
+    color:white;
+  background:black;
+  opacity:0.65;
+  padding-right:6px;
+  padding-left:6px;
+  margin-top: 30px;
+  margin-bottom: 120px;
+  border-color:black;
+
+  &:hover{
+    background: white;
+  }
+}
+
+/************************************
+This whole typography algorithm function 
+was founded on Chris Lam's youtube video
+and I credit this author's algorithm 
+function that would make the text bigger 
+on large screen width sizes or smaller on
+small screen width sizes. 
+Original code found on this link:
+https://github.com/doctorlam/responsive-font-size/blob/master/typography.css
+*************************************/
+/*This whole algorithm uses a 
+  typography technique which makes
+  text bigger or smaller depending
+  on the size of a browser or 
+  device.*/
+html {
+	font-size: 14px;
+}
+
+h1 {
+	font-size: 3.2rem;
+}
+
+h2 {
+	font-size: 2.3rem;
+  margin: auto;
+}
+h3{
+  font-size: 1.7rem;
+  margin: auto
+}
+h6{
+  font-size: 1.0rem;
+  margin: auto
+}
+p{
+	font-size: 1rem;
+  line-height: 1.3em;
+  margin: auto;
+}
+
+ li {
+  line-height: 1.4em;
+  margin: auto;
+}
+
+/*This whole function basically changes
+  the font-size whenever the browser
+  size or device is greater than or 
+  equal to 500 pixels.*/
+@media screen and (min-width: 500px){
+  html{
+    font-size: 14px;
+  }
+
+}
+/*This whole function basically changes
+  the font-size whenever the browser
+  size or device is greater than or 
+  equal to 570 pixels.*/
+@media screen and (min-width: 570px){
+  html{
+    font-size: 15px;
+  }
+
+}
+/*This whole function basically changes
+  the font-size whenever the browser
+  size or device is greater than or 
+  equal to 620 pixels.*/
+@media screen and (min-width: 620px){
+  html{
+    font-size: 16px;
+  }
+}
+/*This whole function basically changes
+  the font-size whenever the browser
+  size or device is greater than or 
+  equal to 680 pixels.*/
+@media screen and (min-width: 680px){
+  html{
+    font-size: 17px;
+  }
+}
+
+/*This whole function basically changes
+  the font-size whenever the browser
+  size or device is greater than or 
+  equal to 720 pixels.*/
+@media screen and (min-width: 720px){
+  html{
+    font-size: 18px;
+  }
+}
+
+/*This whole function basically changes
+  the font-size whenever the browser
+  size or device is greater than or 
+  equal to 800 pixels.*/
+@media screen and (min-width: 800px){
+  html{
+    font-size: 19px;
+  }
+}
+
+/*This whole function basically changes
+  the font-size whenever the browser
+  size or device is greater than or 
+  equal to 860 pixels.*/
+@media screen and (min-width: 860px){
+  html{
+    font-size: 20px;
+  }
+}
+
+/*This whole function basically changes
+  the font-size whenever the browser
+  size or device is greater than or 
+  equal to 920 pixels.*/
+@media screen and (min-width: 920px){
+  html{
+    font-size: 21px;
+  }
+}
+
+/*This whole function basically changes
+  the font-size whenever the browser
+  size or device is greater than or 
+  equal to 1000 pixels.*/
+@media screen and (min-width: 1000px){
+  html{
+    font-size: 22px;  
+  }
+}

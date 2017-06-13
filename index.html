@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="This displays the weather in a local area"/>
+    <meta name="keywords" content="weather, local, local weather"/>
+    <meta name="robots" content="index/follow"/>
+    <meta name="author" content="Jonalbert Encina"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="weather.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css"/>
+    <link rel="stylesheet" href="weather.css"/>
+    
+    <title>Local Weather</title>
+  </head>
+  <body>
+  <!--Create a full container-->
+    <div class="container-full" id="wth">
+      <!--Create a Bootstrap row-->
+      <div class="row by"> 
+        <h1>
+          </br>
+          <h1 class="wl">
+            Current Weather Location: 
+          </h1>
+        </h1>
+        <!--This is for the estimated
+         current weather location.-->
+        <h2 class ="lc" id="ctry">
+        </h2>
+        <div>
+
+          <h1>
+          <!--This is for the current
+           local weather icon.-->          
+            <i class="wbox" id="weather"> 
+            </i>
+          </h1>    
+          <!--This is for switching 
+           between Celsius or Fahrenheit
+           temperatures.-->
+          <span class="btn btn-default bn"
+            id = "tp"> 
+            <h3 id = "temp">
+            </h3>
+          </span>
+        <!--These are for the current
+         weather description at what 
+         time.-->  
+          <h2 class="status"> Status:
+            <span id="des"> </span>
+            <span id="tm"></span>
+          </h2>
+          <!--This is for updating 
+           the new local weather.-->
+          <span class="btn btn-default update"> 
+            <h3> Update weather
+            </h3>
+          </span>
+        </div>
+      </div> <!--end of row--> 
+    </div><!--end of container-->  
+  </body> <!--end of body-->  
+</html>
